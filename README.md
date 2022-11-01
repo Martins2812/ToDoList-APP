@@ -1,7 +1,8 @@
 # Projeto ToDoList-App
 
 Feito pelo aluno: Lucas Martins <br/>
-Linkedin: <https://www.linkedin.com/in/lucas-martins-487ba91b9//a>
+-Linkedin: <https://www.linkedin.com/in/lucas-martins-487ba91b9//a> <br/>
+-Deploy: https://todolist-martins.netlify.app
 
 ## Descrição:
 
