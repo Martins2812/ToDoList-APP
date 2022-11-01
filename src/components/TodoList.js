@@ -8,18 +8,18 @@ import 'react-toastify/dist/ReactToastify.css';
 function TodoList() {
     const [todos, setTodos] = useState([]);
 
-    const notify = () => 
-    toast.error(' Adicione uma tarefa!', {
-        position: "top-right",
-        autoClose: 5000,
-        hideProgressBar: false,
-        closeOnClick: true,
-        pauseOnHover: true,
-        draggable: true,
-        progress: undefined,
-        theme: "light",
+    const notify = () =>
+        toast.error(' Adicione uma tarefa!', {
+            position: "top-right",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "light",
         });
-    
+
 
     const addTodo = todo => {
         if (!todo.text || /^\s*$/.test(todo.text)) {
@@ -60,8 +60,8 @@ function TodoList() {
         <div>
             <h1>Qual os seus planos para hoje?</h1>
             <TodoForm onSubmit={addTodo} />
-            <Todo todos={todos} completeTodo={completeTodo} removeTodo={removeTodo} 
-            updateTodo={updatedTodo}/>
+            <Todo todos={todos} completeTodo={completeTodo} removeTodo={removeTodo}
+                updateTodo={updatedTodo} />
             <ToastContainer />
         </div>
     );
